@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أثر - المقررات</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root { --maroon: #5C1F3A; --maroon-light: #7C2D4F; --salmon: #E8876A; --cream: #FFF5F0; --text-dark: #2A0F1A; --text-mid: #6B3A4A; --gold: #C9963A; }
+body { font-family: 'Tajawal', sans-serif; background: var(--cream); }
+nav { background: var(--maroon); padding: 16px 48px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+.logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.logo img { width: 44px; height: 44px; object-fit: contain; border-radius: 8px; }
+.logo-text { font-size: 20px; font-weight: 800; color: white; }
+.nav-links { display: flex; align-items: center; gap: 16px; }
+.nav-link { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 14px; }
+.btn-profile { background: rgba(255,255,255,0.15); color: white; text-decoration: none; padding: 8px 18px; border-radius: 8px; font-size: 14px; font-weight: 600; }
+
+.page-header { background: linear-gradient(135deg, var(--maroon), #3A0F25); padding: 48px; color: white; }
+.breadcrumb { font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 16px; }
+.breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; }
+.breadcrumb span { color: white; }
+.page-header h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
+.page-header p { color: rgba(255,255,255,0.7); font-size: 15px; }
+
+.content { padding: 48px; max-width: 1200px; margin: 0 auto; }
+.section-title { font-size: 20px; font-weight: 800; color: var(--maroon); margin-bottom: 24px; display: flex; align-items: center; gap: 10px; }
+.section-title::after { content: ''; flex: 1; height: 2px; background: linear-gradient(90deg, var(--maroon), transparent); border-radius: 2px; }
+
+.courses-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+.course-card { background: white; border-radius: 16px; padding: 24px; box-shadow: 0 2px 12px rgba(92,31,58,0.08); text-decoration: none; color: inherit; transition: transform .2s, box-shadow .2s; border: 1px solid rgba(92,31,58,0.06); display: block; }
+.course-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(92,31,58,0.14); }
+.course-code { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: var(--salmon); margin-bottom: 8px; }
+.course-name { font-size: 17px; font-weight: 700; color: var(--maroon); margin-bottom: 10px; line-height: 1.4; }
+.course-desc { font-size: 13px; color: var(--text-mid); line-height: 1.6; margin-bottom: 16px; }
+.course-meta { display: flex; align-items: center; justify-content: space-between; }
+.course-exp { font-size: 12px; color: var(--text-mid); }
+.course-arrow { width: 28px; height: 28px; background: linear-gradient(135deg, var(--salmon), var(--maroon)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 13px; }
+
+footer { background: #2A0F1A; padding: 24px 48px; text-align: center; color: rgba(255,255,255,0.4); font-size: 12px; margin-top: 60px; }
+footer strong { color: var(--salmon); }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">
+    <img src="logo.PNG" alt="أثر">
+    
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">الرئيسية</a>
+    <a href="profile.html" class="btn-profile">حسابي</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="breadcrumb"><a href="index.html">الرئيسية</a> ← <span>المستوى الثالث</span></div>
+  <h1>مقررات المستوى الثالث</h1>
+  <p>استعرض جميع المقررات المتاحة في هذا المستوى</p>
+</div>
+
+<div class="content">
+  <div class="section-title">المقررات الدراسية</div>
+  <div class="courses-grid">
+
+    <a href="course-details.html" class="course-card">
+      <div class="course-code">IT 210</div>
+      <div class="course-name">مقدمة في قواعد البيانات</div>
+      <div class="course-desc">مفاهيم قواعد البيانات العلائقية وتصميمها وتطبيقها باستخدام SQL</div>
+      <div class="course-meta">
+        <span class="course-exp">١٢ تجربة</span>
+        <div class="course-arrow">←</div>
+      </div>
+    </a>
+
+    <a href="course-details.html" class="course-card">
+      <div class="course-code">IT 220</div>
+      <div class="course-name">هياكل البيانات والخوارزميات</div>
+      <div class="course-desc">دراسة هياكل البيانات الأساسية وتحليل تعقيد الخوارزميات</div>
+      <div class="course-meta">
+        <span class="course-exp">٨ تجارب</span>
+        <div class="course-arrow">←</div>
+      </div>
+    </a>
+
+    <a href="course-details.html" class="course-card">
+      <div class="course-code">IT 230</div>
+      <div class="course-name">البرمجة الكائنية</div>
+      <div class="course-desc">مفاهيم البرمجة الكائنية التوجه باستخدام Java</div>
+      <div class="course-meta">
+        <span class="course-exp">١٥ تجربة</span>
+        <div class="course-arrow">←</div>
+      </div>
+    </a>
+
+    <a href="course-details.html" class="course-card">
+      <div class="course-code">IT 240</div>
+      <div class="course-name">شبكات الحاسب</div>
+      <div class="course-desc">أساسيات شبكات الحاسب وبروتوكولات الاتصال</div>
+      <div class="course-meta">
+        <span class="course-exp">٦ تجارب</span>
+        <div class="course-arrow">←</div>
+      </div>
+    </a>
+
+    <a href="course-details.html" class="course-card">
+      <div class="course-code">IT 250</div>
+      <div class="course-name">هندسة البرمجيات</div>
+      <div class="course-desc">دورة حياة تطوير البرمجيات ومنهجيات إدارة المشاريع</div>
+      <div class="course-meta">
+        <span class="course-exp">١٠ تجارب</span>
+        <div class="course-arrow">←</div>
+      </div>
+    </a>
+
+    <a href="course-details.html" class="course-card">
+      <div class="course-code">IT 260</div>
+      <div class="course-name">أمن المعلومات</div>
+      <div class="course-desc">مبادئ أمن المعلومات والتشفير وحماية البيانات</div>
+      <div class="course-meta">
+        <span class="course-exp">٩ تجارب</span>
+        <div class="course-arrow">←</div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<footer><p>جميع الحقوق محفوظة &copy; 2026 — <strong>منصة أثر</strong> | جامعة الملك سعود</p></footer>
+</body>
+</html>
