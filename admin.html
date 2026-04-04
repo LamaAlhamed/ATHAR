@@ -12,7 +12,7 @@ body { font-family: 'Tajawal', sans-serif; background: var(--cream); }
 nav { background: var(--navy); padding: 16px 48px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
 .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .logo img { width: 44px; height: 44px; object-fit: contain; border-radius: 8px; }
-.logo-text { font-size: 20px; font-weight: 800; color: white; }
+.logo-text { font-size: 15px; font-weight: 600; color: white; }
 .admin-badge { background: var(--salmon); color: white; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 50px; margin-right: 8px; }
 .btn-logout { background: rgba(255,255,255,0.12); color: white; border: 1px solid rgba(255,255,255,0.2); padding: 8px 18px; border-radius: 8px; font-size: 14px; font-family: 'Tajawal', sans-serif; cursor: pointer; }
 
@@ -47,10 +47,11 @@ footer strong { color: var(--salmon); }
 </style>
 </head>
 <body>
+<span class="admin-badge" style="display:none;"></span>
 <nav>
   <a href="index.html" class="logo">
     <img src="logo.PNG" alt="أثر">
-    <span class="logo-text">أثر <span class="admin-badge">أدمن</span></span>
+	    <p class="logo-text">أترك أثرك..وساعد غيرك</p>
   </a>
   <button class="btn-logout">تسجيل الخروج</button>
 </nav>
@@ -133,47 +134,10 @@ footer strong { color: var(--salmon); }
     </tbody>
   </table>
 
-  <div class="section-header">
-    <div class="section-title">تجارب الطلاب</div>
-  </div>
-
-  <table>
-    <thead>
-      <tr>
-        <th>الطالبة</th>
-        <th>المقرر</th>
-        <th>التجربة</th>
-        <th>التاريخ</th>
-        <th>إجراءات</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>ريم العتيبي</td>
-        <td>IT 210</td>
-        <td>المقرر ممتع جداً ومفيد...</td>
-        <td>مارس ٢٠٢٦</td>
-        <td><button class="btn-sm btn-delete-sm">حذف</button></td>
-      </tr>
-      <tr>
-        <td>سارة الحربي</td>
-        <td>IT 210</td>
-        <td>الامتحان يركز على SQL...</td>
-        <td>فبراير ٢٠٢٦</td>
-        <td><button class="btn-sm btn-delete-sm">حذف</button></td>
-      </tr>
-      <tr>
-        <td>نورة المطيري</td>
-        <td>IT 220</td>
-        <td>مقرر صعب لكن مهم...</td>
-        <td>يناير ٢٠٢٦</td>
-        <td><button class="btn-sm btn-delete-sm">حذف</button></td>
-      </tr>
-    </tbody>
-  </table>
 
 </div>
 
 <footer><p>جميع الحقوق محفوظة &copy; 2026 — <strong>منصة أثر</strong> | لوحة الإدارة</p></footer>
+<script src="athar-ui.js"></script>
 </body>
 </html>
