@@ -40,12 +40,55 @@ nav { background: var(--maroon); padding: 16px 48px; display: flex; align-items:
 
 footer { background: #2A0F1A; padding: 24px 48px; text-align: center; color: rgba(255,255,255,0.4); font-size: 12px; margin-top: 60px; }
 footer strong { color: var(--salmon); }
+
+.course-meta-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.course-track {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  border: 1px solid rgba(92,31,58,0.14);
+  box-shadow: 0 2px 8px rgba(92,31,58,0.06);
+}
+
+.course-track.general {
+  background: #FFF5F0;
+  color: #5C1F3A;
+}
+
+.course-track.cyber {
+  background: rgba(124,45,79,0.10);
+  color: #7C2D4F;
+}
+
+.course-track.networks {
+  background: rgba(232,135,106,0.14);
+  color: #A24E3B;
+}
+
+.course-track.ai {
+  background: rgba(201,150,58,0.12);
+  color: #8A6518;
+}
+
 </style>
 </head>
 <body>
 <nav>
   <a href="index.html" class="logo">
-    <img src="logo.PNG" alt="أثر">
+    <img src="images/logo.PNG" alt="أثر">
         <p class="logo-text">أترك أثرك..وساعد غيرك</p>
   </a>
   <div class="nav-links">
@@ -64,65 +107,83 @@ footer strong { color: var(--salmon); }
   <div class="section-title">المقررات الدراسية</div>
   <div class="courses-grid">
 
-    <a href="course-details.html" class="course-card">
-      <div class="course-code">IT 210</div>
-      <div class="course-name">مقدمة في قواعد البيانات</div>
-      <div class="course-desc">مفاهيم قواعد البيانات العلائقية وتصميمها وتطبيقها باستخدام SQL</div>
-      <div class="course-meta">
-        <span class="course-exp">١٢ تجربة</span>
-        <div class="course-arrow">←</div>
-      </div>
-    </a>
+  <a href="course-details.html" class="course-card">
+  <div class="course-meta-top">
+    <div class="course-track general">عام</div>
+    <div class="course-code">IT 222</div>
+  </div>
+  <div class="course-name">مبادئ قواعد البيانات</div>
+  <div class="course-desc">مفاهيم قواعد البيانات العلائقية وتصميمها وتطبيقها باستخدام SQL</div>
+  <div class="course-meta">
+    <span class="course-exp">١٢ تجربة</span>
+    <div class="course-arrow">←</div>
+  </div>
+</a>
 
-    <a href="course-details.html" class="course-card">
-      <div class="course-code">CSC 212</div>
-      <div class="course-name">هياكل البيانات والخوارزميات</div>
-      <div class="course-desc">دراسة هياكل البيانات الأساسية وتحليل تعقيد الخوارزميات</div>
-      <div class="course-meta">
-        <span class="course-exp">٨ تجارب</span>
-        <div class="course-arrow">←</div>
-      </div>
-    </a>
+<a href="course-details.html" class="course-card">
+  <div class="course-meta-top">
+    <div class="course-track general">عام</div>
+    <div class="course-code">CSC 212</div>
+  </div>
+  <div class="course-name">تراكيب بيانات</div>
+  <div class="course-desc">دراسة هياكل البيانات الأساسية وتحليل تعقيد الخوارزميات</div>
+  <div class="course-meta">
+    <span class="course-exp">٨ تجارب</span>
+    <div class="course-arrow">←</div>
+  </div>
+</a>
 
-    <a href="course-details.html" class="course-card">
-      <div class="course-code">CSC 113</div>
-      <div class="course-name">البرمجة الكائنية</div>
-      <div class="course-desc">مفاهيم البرمجة الكائنية التوجه باستخدام Java</div>
-      <div class="course-meta">
-        <span class="course-exp">١٥ تجربة</span>
-        <div class="course-arrow">←</div>
-      </div>
-    </a>
+<a href="course-details.html" class="course-card">
+  <div class="course-meta-top">
+    <div class="course-track general">عام</div>
+    <div class="course-code">CSC 113</div>
+  </div>
+  <div class="course-name">برمجة حاسبات</div>
+  <div class="course-desc">مفاهيم البرمجة الكائنية التوجه باستخدام Java</div>
+  <div class="course-meta">
+    <span class="course-exp">١٥ تجربة</span>
+    <div class="course-arrow">←</div>
+  </div>
+</a>
 
-    <a href="course-details.html" class="course-card">
-      <div class="course-code">IT 328</div>
-      <div class="course-name">شبكات الحاسب</div>
-      <div class="course-desc">أساسيات شبكات الحاسب وبروتوكولات الاتصال</div>
-      <div class="course-meta">
-        <span class="course-exp">٦ تجارب</span>
-        <div class="course-arrow">←</div>
-      </div>
-    </a>
+<a href="course-details.html" class="course-card">
+  <div class="course-meta-top">
+   <div class="course-track general">عام</div>
+    <div class="course-code">IT 328</div>
+  </div>
+  <div class="course-name">مبادئ شبكات الحاسب</div>
+  <div class="course-desc">أساسيات شبكات الحاسب وبروتوكولات الاتصال</div>
+  <div class="course-meta">
+    <span class="course-exp">٦ تجارب</span>
+    <div class="course-arrow">←</div>
+  </div>
+</a>
 
-    <a href="course-details.html" class="course-card">
-      <div class="course-code">IT 320</div>
-      <div class="course-name">هندسة البرمجيات</div>
-      <div class="course-desc">دورة حياة تطوير البرمجيات ومنهجيات إدارة المشاريع</div>
-      <div class="course-meta">
-        <span class="course-exp">١٠ تجارب</span>
-        <div class="course-arrow">←</div>
-      </div>
-    </a>
+<a href="course-details.html" class="course-card">
+  <div class="course-meta-top">
+    <div class="course-track general">عام</div>
+    <div class="course-code">IT 320</div>
+  </div>
+  <div class="course-name">هندسة البرمجيات</div>
+  <div class="course-desc">دورة حياة تطوير البرمجيات ومنهجيات إدارة المشاريع</div>
+  <div class="course-meta">
+    <span class="course-exp">١٠ تجارب</span>
+    <div class="course-arrow">←</div>
+  </div>
+</a>
 
-    <a href="course-details.html" class="course-card">
-      <div class="course-code">IT 324</div>
-      <div class="course-name">أمن المعلومات</div>
-      <div class="course-desc">مبادئ أمن المعلومات والتشفير وحماية البيانات</div>
-      <div class="course-meta">
-        <span class="course-exp">٩ تجارب</span>
-        <div class="course-arrow">←</div>
-      </div>
-    </a>
+<a href="course-details.html" class="course-card">
+  <div class="course-meta-top">
+    <div class="course-track cyber">الأمن السيبراني</div>
+    <div class="course-code">IT 371</div>
+  </div>
+  <div class="course-name">أمن التطبيقات</div>
+  <div class="course-desc">مبادئ أمن التطبيقات والتشفير وحماية البيانات</div>
+  <div class="course-meta">
+    <span class="course-exp">٩ تجارب</span>
+    <div class="course-arrow">←</div>
+  </div>
+</a>
 
   </div>
 </div>
