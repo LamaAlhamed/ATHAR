@@ -54,13 +54,39 @@ footer strong { color: var(--salmon); }
 .tab-panel { display: none; }
 .tab-panel.active { display: block; }
 .liked-badge { background: rgba(232,135,106,0.12); color: var(--salmon); font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 50px; margin-right: 8px; }
+.profile-actions {
+  margin-bottom: 12px;
+}
 
+.profile-name-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
 </style>
 </head>
 <body>
 <nav>
   <a href="index.html" class="logo">
-    <img src="logo.PNG" alt="أثر">
+    <img src="images/logo.PNG" alt="أثر">
     <p class="logo-text">أترك أثرك..وساعد غيرك</p>
   </a>
   <div class="nav-links">
@@ -72,14 +98,22 @@ footer strong { color: var(--salmon); }
 <div class="profile-header">
   <div class="profile-info">
     <div class="profile-avatar">ر</div>
-    <div>
-      <div class="profile-name">ريم العتيبي</div>
-      <div class="profile-email"> Reem@student.ksu.edu.sa </div>
-      <div class="profile-stats">
-        <div class="stat"><span class="stat-num">٣</span><div class="stat-label">تجاربي</div></div>
-        <div class="stat"><span class="stat-num">٢</span><div class="stat-label">إعجاب</div></div>
-      </div>
-    </div>
+<div>
+  <div class="profile-name-row">
+    <div class="profile-name" id="profileName">ريم العتيبي</div>
+
+    <button class="icon-btn" id="editProfileBtn" onclick="toggleProfileEdit()" aria-label="تعديل البيانات" title="تعديل البيانات">
+      <img id="editProfileIcon" src="images/edit.png" alt="تعديل">
+    </button>
+  </div>
+
+  <div class="profile-email" id="profileEmail">Reem@student.ksu.edu.sa</div>
+
+  <div class="profile-stats">
+    <div class="stat"><span class="stat-num">٣</span><div class="stat-label">تجاربي</div></div>
+    <div class="stat"><span class="stat-num">٢</span><div class="stat-label">إعجاب</div></div>
+  </div>
+</div>
   </div>
 </div>
 
