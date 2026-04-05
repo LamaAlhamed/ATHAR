@@ -55,7 +55,7 @@ input[type="file"] { display: none; }
 <body>
 <nav>
   <a href="index.html" class="logo">
-    <img src="logo.PNG" alt="أثر">
+    <img src="images/logo.PNG" alt="أثر">
         <p class="logo-text">أترك أثرك..وساعد غيرك</p>
   </a>
   <div style="display:flex;align-items:center;gap:12px;">
@@ -99,6 +99,17 @@ input[type="file"] { display: none; }
       <label>اسم المقرر <span class="required">*</span></label>
       <input type="text" placeholder="أدخل اسم المقرر">
     </div>
+
+<div class="form-group">
+  <label>مسار المقرر <span class="required">*</span></label>
+  <select>
+    <option value="" disabled selected>مسار المقرر</option>
+    <option value="general">عام</option>
+    <option value="cybersecurity">الأمن السيبراني</option>
+    <option value="networks-iot">الشبكات وهندسة إنترنت الأشياء</option>
+    <option value="data-ai">علم البيانات والذكاء الاصطناعي</option>
+  </select>
+</div>
 
     <div class="form-group">
       <label>وصف المقرر <span class="required">*</span></label>
